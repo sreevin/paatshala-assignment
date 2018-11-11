@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>
+            Blockchain-services
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="leftmenu">
+                    <h1>BLOCKCHAIN</h1>
+                </div>
+                <div class="rightmenu">
+                    <h5>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                </h5>
+                </ul>
+                </div>
+            </div>
+            <div class = "container card">
+                <br>
+               <center>
+                   <br><div class="row"><h2><b>REGISTER HERE</b></h2></div>
+                   <br>
+                   <br>
+                   
+                   <form class="bg-light" action="#" onsubmit="return validation()">
+                   <div class="form-group">
+                    <label><b>Name: </b></label>
+                        <input type="text" name="user" id="name" class="form-control" autocomplete="off">
+                    <span id="nameid" class="text-danger"></span>
+                </div><br><br>
+               
+                
+                
+                    
+                <div class="form-group">
+                        <label><b>DOB: </b></label>
+                            <input type="date" name="dob" id="dob" class="form-control" autocomplete="off">
+                        <span id="dobid" class="text-danger"></span>
+                    </div><br><br>
+                <div class="form-group">
+                    <label><b>Email id: </b></label>
+                    <input type="text" name="email" id="email" class="form-control" autocomplete="off">
+                    <span id="emailid" class="text-danger"></span>
+                </div><br><br>
+                  
+                <div class="form-group">
+                        <label><b>Username: </b></label>
+                        <input type="text" name="username" id="username" class="form-control" autocomplete="off">
+                        <span id="usernameid" class="text-danger"></span>
+                    </div><br><br>
+                
+               
+                    <div class="form-group">
+                            <label><b>Password: </b></label>
+                            <input type="password" name="password" id="password" class="form-control" autocomplete="off">
+                            <span id="passwordid" class="text-danger"></span>
+                        </div><br><br> 
+                    
+                        <div class="form-group">
+                                <label><b>Confirm Password: </b></label>
+                                <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" autocomplete="off">
+                                <span id="confirmpasswordid" class="text-danger"></span>
+                            </div><br><br> 
+                          <input type="submit" name="submit" value= "SUBMIT" class="btn btn-info">
+                         
+    </form>
+        </center>
+        </header> 
+        <script type="text/javascript">
+            function validation(){
+                var user= document.getElementById('name').value;
+                var dob= document.getElementById('dob').value;
+                var email= document.getElementById('email').value;
+                var username= document.getElementById('username').value;
+                var password= document.getElementById('password').value;
+                var confirmpassword= document.getElementById('confirmpassword').value;
+
+
+
+
+                if(user == "" ){
+                    document.getElementById('nameid').innerHTML =  "<br> **please fill your name ";
+                    return false;
+                }
+                if(dob == ""){
+                    document.getElementById('dobid').innerHTML =  "<br> **please fill your DOB ";
+                    return false;
+                }
+                if(email == ""){
+                    document.getElementById('emailid').innerHTML =  "<br> **please fill your Email ";
+                    return false;
+                }
+                if(username == ""){
+                    document.getElementById('usernameid').innerHTML =  "<br> **please fill your username ";
+                    return false;
+                }
+                if(password == ""){
+                    document.getElementById('passwordid').innerHTML =  "<br> **please fill your password ";
+                    return false;
+                }
+                if(confirmpassword == ""){
+                    document.getElementById('confirmpasswordid').innerHTML =  "<br> **please fill confirm password ";
+                    return false;
+                }
+
+
+            }
+        </script>
+        
+    </body>
+
+
+</html>
